@@ -1,0 +1,26 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  /*background: radial-gradient(circle, #fcfafd, #eeecf1); /* Set a radial gradient background */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.main-heading {
+  font-size: 6em; /* Set a larger font size */
+  font-family: 'Pacifico', cursive; /* Use a different font family */
+  color: #070000; /* Set text color to white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+  animation: moveUpDown 3s ease-in-out infinite; /* Apply moveUpDown animation */
+}
+
+/* Keyframes for text moveUpDown animation */
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0); /* Start and end position */
+  }
+  50% {
+    transform: translateY(-20px); /* Move up */
+  }
+}
